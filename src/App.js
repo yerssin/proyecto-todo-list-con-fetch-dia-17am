@@ -7,7 +7,7 @@ function App() {
   const [listaTareas, setListaTareas] = useState([]);
 
   useEffect(() => {
-    fetch("https://assets.breatheco.de/apis/fake/todos/user/barbaraulloa")
+    fetch("https://assets.breatheco.de/apis/fake/todos/user/yerssin")
       .then((response) => response.json())
       .then((data) => setListaTareas(data));
   }, []);
@@ -41,7 +41,7 @@ function App() {
     };
 
     fetch(
-      "https://assets.breatheco.de/apis/fake/todos/user/barbaraulloa",
+      "https://assets.breatheco.de/apis/fake/todos/user/yerssin",
       requestOptions
     )
       .then((response) => response.text())
